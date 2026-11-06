@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Аутсорсинг линейного персонала по всей России — «Честная смена»</title>
+<meta name="description" content="Грузчики, комплектовщики, упаковщики, операторы линий и разнорабочие на ваш объект от 48 часов. Табель каждый день, замена в течение смены, оплата только за подтверждённые часы. Ставки от 250 ₽/ч.">
+<link rel="canonical" href="https://personal-go.ru/">
+<meta name="theme-color" content="#0F2019">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Честная смена">
+<meta property="og:title" content="Аутсорсинг линейного персонала — «Честная смена»">
+<meta property="og:description" content="Заказали 30 человек — вышли 30. Отработали 11 часов — платите за 11. Линейный персонал по всей России.">
+<meta property="og:url" content="https://personal-go.ru/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/onest-cyrillic-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/onest-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/fonts/fonts.css">
+<style>
+body{margin:0;background:#F3F6F2;color:#0F2019}
+:root{color-scheme:light}
+html{scroll-behavior:smooth}
+[hidden]{display:none!important}
+header{position:sticky;top:0;z-index:5}
+a{color:#0F2019}a:hover{color:#13924F}
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(40px,env(safe-area-inset-left,0px));padding-right:max(40px,env(safe-area-inset-right,0px));box-sizing:border-box}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:64px;align-items:center}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0}
+.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.four{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.split{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:72px;align-items:start}
+.pain{display:grid;grid-template-columns:80px minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:baseline}
+.nav{display:flex;gap:32px}
+.tbl{overflow-x:auto}
+details summary{list-style:none;cursor:pointer}
+details summary::-webkit-details-marker{display:none}
+details[open] .plus{transform:rotate(45deg)}
+input,select,textarea{font-family:inherit}
+@media (max-width:1120px){ .nav{display:none} }
+@media (max-width:980px){
+ .hero-grid,.split{grid-template-columns:minmax(0,1fr);gap:48px}
+ .three{grid-template-columns:minmax(0,1fr)}
+ .four{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .nav{display:none}
+ .three.ruled>div{padding-left:0 !important;border-left:0 !important;border-bottom:1px solid #D5DED4}
+}
+@media (max-width:640px){
+ .wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+ .two,.four{grid-template-columns:minmax(0,1fr)}
+ .pain{grid-template-columns:minmax(0,1fr);gap:8px}
+ .h1{font-size:40px !important}
+ .h2{font-size:32px !important}
+ .hide-sm{display:none !important}
+ header .wrap{gap:12px !important}
+ header .wrap > a:first-child span:last-child{font-size:17px !important}
+ header a[href="#raschet"]{padding:10px 12px !important;font-size:14px !important}
+ .ruled>div{padding-left:0 !important;padding-right:0 !important;border-left:0 !important;border-bottom:1px solid #D5DED4}
+}
+</style>
+</head>
+<body>
+<div style="font-family: 'Onest', system-ui, sans-serif; color: #0F2019; background: #F3F6F2; font-size: 17px; line-height: 1.55">
+
+  <!-- ШАПКА -->
+  <header style="border-bottom: 1px solid #D5DED4; background: #F3F6F2">
+    <div class="wrap" style="display: flex; align-items: center; gap: 40px; height: 76px">
+      <a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #0F2019">
+        <span style="width: 36px; height: 36px; background: #0F2019; display: flex; align-items: center; justify-content: center; border-radius: 4px">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3DDC84" stroke-width="3" stroke-linecap="square" aria-hidden="true"><path d="M4 12.5l5 5L20 6"></path></svg>
+        </span>
+        <span style="font-weight: 800; font-size: 19px; letter-spacing: -0.02em; white-space: nowrap">Честная смена</span>
+      </a>
+      <nav class="nav" aria-label="Разделы" style="font-size: 15px; font-weight: 500">
+        <a href="#stavki" style="text-decoration: none">Ставки</a>
+        <a href="#kalkulyator" style="text-decoration: none">Калькулятор</a>
+        <a href="#proverka" style="text-decoration: none">Проверка</a>
+        <a href="#faq" style="text-decoration: none">Вопросы</a>
+      </nav>
+      <div style="margin-left: auto; display: flex; align-items: center; gap: 24px">
+        <a class="hide-sm" href="tel:+79057836568" style="font-weight: 600; font-size: 15px; white-space: nowrap; text-decoration: none">+7 (905) 783-65-68</a>
+        <a href="#raschet" style="background: #0F2019; color: #F3F6F2; text-decoration: none; font-weight: 600; font-size: 15px; padding: 13px 20px; border-radius: 4px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; white-space: nowrap">Рассчитать смену</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ПЕРВЫЙ ЭКРАН -->
+  <section id="top" style="padding-top: 88px; padding-bottom: 104px">
+    <div class="wrap hero-grid">
+      <div style="display: flex; flex-direction: column; gap: 28px">
+        <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #55665D">Аутсорсинг линейного персонала · вся Россия</p>
+        <h1 class="h1" style="margin: 0; font-size: 66px; line-height: 1.02; font-weight: 800; letter-spacing: -0.035em; text-wrap: balance">Заказали 30 человек — вышли <span style="background: #3DDC84; padding: 0 10px">30</span>. Отработали 11 часов — платите за 11.</h1>
+        <p style="margin: 0; font-size: 20px; line-height: 1.5; color: #34433B; max-width: 34em">Берём на себя склад, линию или торговый зал: подбираем людей, выводим бригаду с бригадиром, ведём табель и закрываем замены. Вы получаете сделанную работу и оплачиваете только подтверждённые часы.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 14px; padding-top: 8px">
+          <a href="#raschet" style="background: #3DDC84; color: #0F2019; text-decoration: none; font-weight: 700; font-size: 17px; padding: 18px 28px; border-radius: 4px">Рассчитать стоимость за 2 часа</a>
+          <a href="#stavki" style="color: #0F2019; text-decoration: none; font-weight: 600; font-size: 17px; padding: 18px 8px; border-bottom: 2px solid #0F2019">Ставки от 250 ₽/час</a>
+        </div>
+      </div>
+
+      <!-- табель -->
+      <figure style="margin: 0; background: #FFFFFF; border: 1px solid #D5DED4; border-radius: 6px; box-shadow: 0 30px 60px -30px rgba(18,20,23,0.28); overflow: hidden">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 18px 24px; background: #0F2019; color: #F3F6F2">
+          <span style="font-weight: 700; font-size: 16px">Табель смены</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #A9C0B4">РЦ «Южный» · 05.11 · 08:00–20:00</span>
+        </div>
+        <div class="tbl">
+          <table style="width: 100%; border-collapse: collapse; font-size: 15px; min-width: 420px">
+            <thead>
+              <tr style="text-align: left; color: #55665D; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em">
+                <th style="padding: 12px 24px; font-weight: 600; border-bottom: 1px solid #D5DED4">Сотрудник</th>
+                <th style="padding: 12px 12px; font-weight: 600; border-bottom: 1px solid #D5DED4">Позиция</th>
+                <th style="padding: 12px 24px; font-weight: 600; border-bottom: 1px solid #D5DED4; text-align: right">Часы</th>
+              </tr>
+            </thead>
+            <tbody style="font-family: 'JetBrains Mono', monospace; font-size: 14px">
+              <tr><td style="padding: 11px 24px; border-bottom: 1px solid #E9EFE8">Ахмедов Р.</td><td style="padding: 11px 12px; border-bottom: 1px solid #E9EFE8; font-family: 'Onest', sans-serif">Комплектовщик</td><td style="padding: 11px 24px; border-bottom: 1px solid #E9EFE8; text-align: right">11,0</td></tr>
+              <tr><td style="padding: 11px 24px; border-bottom: 1px solid #E9EFE8">Белова Н.</td><td style="padding: 11px 12px; border-bottom: 1px solid #E9EFE8; font-family: 'Onest', sans-serif">Комплектовщик</td><td style="padding: 11px 24px; border-bottom: 1px solid #E9EFE8; text-align: right">11,0</td></tr>
+              <tr><td style="padding: 11px 24px; border-bottom: 1px solid #E9EFE8">Гусев А.</td><td style="padding: 11px 12px; border-bottom: 1px solid #E9EFE8; font-family: 'Onest', sans-serif">Грузчик</td><td style="padding: 11px 24px; border-bottom: 1px solid #E9EFE8; text-align: right">11,0</td></tr>
+              <tr><td style="padding: 11px 24px; border-bottom: 1px solid #E9EFE8">Демченко О.</td><td style="padding: 11px 12px; border-bottom: 1px solid #E9EFE8; font-family: 'Onest', sans-serif">Грузчик</td><td style="padding: 11px 24px; border-bottom: 1px solid #E9EFE8; text-align: right">9,5<span style="font-family: 'Onest', sans-serif; font-size: 12px; color: #55665D"> · ушёл раньше</span></td></tr>
+              <tr><td style="padding: 11px 24px; border-bottom: 1px solid #E9EFE8">Ершова К.</td><td style="padding: 11px 12px; border-bottom: 1px solid #E9EFE8; font-family: 'Onest', sans-serif">Упаковщик</td><td style="padding: 11px 24px; border-bottom: 1px solid #E9EFE8; text-align: right">11,0</td></tr>
+              <tr><td style="padding: 11px 24px; color: #55665D" colspan="3">+ ещё 19 человек</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #D5DED4">
+          <div style="padding: 16px 24px; border-right: 1px solid #D5DED4"><div style="font-size: 12px; color: #55665D">Заказано / вышло</div><div style="font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 22px">24 / 24</div></div>
+          <div style="padding: 16px 24px; border-right: 1px solid #D5DED4"><div style="font-size: 12px; color: #55665D">К оплате, часов</div><div style="font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 22px">262,5</div></div>
+          <div style="padding: 16px 24px; background: #3DDC84"><div style="font-size: 12px; color: #0F2019">Мастер заказчика</div><div style="font-weight: 700; font-size: 18px; line-height: 1.6">Сверено ✓</div></div>
+        </div>
+      </figure>
+    </div>
+
+    <div class="wrap" style="margin-top: 72px">
+      <div class="three" style="border-top: 2px solid #0F2019">
+        <div style="padding: 22px 24px 0 0"><div style="font-weight: 700; font-size: 20px">Выход бригады от 48 часов</div><div style="color: #55665D; font-size: 15px">с момента подписания заявки</div></div>
+        <div style="padding: 22px 24px 0 0"><div style="font-weight: 700; font-size: 20px">Замена в течение смены</div><div style="color: #55665D; font-size: 15px">невыход вы не оплачиваете</div></div>
+        <div style="padding: 22px 24px 0 0"><div style="font-weight: 700; font-size: 20px">Один договор на всю Россию</div><div style="color: #55665D; font-size: 15px">все ваши площадки и регионы</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- БОЛИ -->
+  <section style="background: #0F2019; color: #F3F6F2; padding-top: 112px; padding-bottom: 112px">
+    <div class="wrap">
+      <h2 class="h2" style="margin: 0 0 16px; font-size: 48px; line-height: 1.05; font-weight: 800; letter-spacing: -0.03em; max-width: 16em; text-wrap: balance">Почему руководители складов и&nbsp;производств меняют подрядчиков</h2>
+      <p style="margin: 0 0 56px; color: #9DB3A8; font-size: 19px; max-width: 36em">Мы спросили. Ответы почти всегда одни и те же.</p>
+
+      <div style="border-top: 1px solid #24382F">
+        <div class="pain" style="padding: 32px 0; border-bottom: 1px solid #24382F">
+          <span style="font-family: 'JetBrains Mono', monospace; color: #3DDC84; font-size: 15px">01</span>
+          <span style="font-weight: 700; font-size: 28px; letter-spacing: -0.02em">Заказали 30 — вышли 18</span>
+          <span style="color: #9DB3A8; font-size: 17px">Линия стоит, отгрузка срывается, а подрядчик обещает «завтра довезём».</span>
+        </div>
+        <div class="pain" style="padding: 32px 0; border-bottom: 1px solid #24382F">
+          <span style="font-family: 'JetBrains Mono', monospace; color: #3DDC84; font-size: 15px">02</span>
+          <span style="font-weight: 700; font-size: 28px; letter-spacing: -0.02em">В табеле 12 часов, на деле 9</span>
+          <span style="color: #9DB3A8; font-size: 17px">Приписанные часы и «мёртвые души» незаметно съедают бюджет участка.</span>
+        </div>
+        <div class="pain" style="padding: 32px 0; border-bottom: 1px solid #24382F">
+          <span style="font-family: 'JetBrains Mono', monospace; color: #3DDC84; font-size: 15px">03</span>
+          <span style="font-weight: 700; font-size: 28px; letter-spacing: -0.02em">Найм по кругу</span>
+          <span style="color: #9DB3A8; font-size: 17px">HR каждый месяц закрывает одни и те же вакансии: на линейных позициях текучка не заканчивается.</span>
+        </div>
+        <div class="pain" style="padding: 32px 0; border-bottom: 1px solid #24382F">
+          <span style="font-family: 'JetBrains Mono', monospace; color: #3DDC84; font-size: 15px">04</span>
+          <span style="font-weight: 700; font-size: 28px; letter-spacing: -0.02em">Подрядчик исчез — вопросы остались</span>
+          <span style="color: #9DB3A8; font-size: 17px">Сомнительный контрагент — это риск снятия вычетов и претензий налоговой уже к заказчику.</span>
+        </div>
+      </div>
+
+      <p style="margin: 56px 0 0; font-size: 28px; font-weight: 700; letter-spacing: -0.02em; max-width: 26em; text-wrap: balance">«Честная смена» устроена так, чтобы ни одна из этих ситуаций у вас не повторилась.</p>
+    </div>
+  </section>
+
+  <!-- КОМУ ПОДХОДИТ -->
+  <section style="padding-top: 112px; padding-bottom: 32px">
+    <div class="wrap">
+      <h2 class="h2" style="margin: 0 0 16px; font-size: 48px; line-height: 1.05; font-weight: 800; letter-spacing: -0.03em; max-width: 18em; text-wrap: balance">Аутсорсинг нужен не всем. Вот как понять, ваш ли это случай</h2>
+      <p style="margin: 0 0 48px; color: #34433B; font-size: 19px; max-width: 38em">Честно скажем, если вам выгоднее свой штат. Это дешевле, чем потом расставаться.</p>
+      <div class="two" style="gap: 24px">
+        <div style="border-radius: 6px; padding: 36px; background: #FFFFFF; border: 1px solid #D5DED4">
+          <p style="margin: 0 0 20px; font-weight: 800; font-size: 22px">Вам подойдёт, если</p>
+          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 16px; font-size: 17px; color: #34433B">
+            <li style="display: flex; gap: 12px"><span aria-hidden="true" style="color: #13924F; font-weight: 800">✓</span><span><b style="color: #0F2019">Люди уходят после 1–2 смен</b>, а HR закрывает одни и те же вакансии по кругу</span></li>
+            <li style="display: flex; gap: 12px"><span aria-hidden="true" style="color: #13924F; font-weight: 800">✓</span><span><b style="color: #0F2019">Объём скачет:</b> распродажи, Новый год, сезон урожая — держать штат под пик невыгодно</span></li>
+            <li style="display: flex; gap: 12px"><span aria-hidden="true" style="color: #13924F; font-weight: 800">✓</span><span><b style="color: #0F2019">Нужно 20+ человек</b> или сразу на нескольких площадках</span></li>
+            <li style="display: flex; gap: 12px"><span aria-hidden="true" style="color: #13924F; font-weight: 800">✓</span><span><b style="color: #0F2019">Открываете новый склад, цех или линию</b> и набрать людей с нуля нужно за дни</span></li>
+            <li style="display: flex; gap: 12px"><span aria-hidden="true" style="color: #13924F; font-weight: 800">✓</span><span><b style="color: #0F2019">Закрывали смены через платформы подработки</b> и упёрлись в лимит 60 часов в месяц на одного человека</span></li>
+          </ul>
+        </div>
+        <div style="border-radius: 6px; padding: 36px; background: #E5ECE4">
+          <p style="margin: 0 0 20px; font-weight: 800; font-size: 22px">Скорее не нужен, если</p>
+          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 16px; font-size: 17px; color: #34433B">
+            <li style="display: flex; gap: 12px"><span aria-hidden="true" style="color: #55665D">—</span><span>Численность стабильна весь год, а текучка низкая</span></li>
+            <li style="display: flex; gap: 12px"><span aria-hidden="true" style="color: #55665D">—</span><span>Работа требует долгого обучения и допуска к закрытой информации</span></li>
+            <li style="display: flex; gap: 12px"><span aria-hidden="true" style="color: #55665D">—</span><span>Нужно 1–2 человека на постоянной основе — проще нанять самим</span></li>
+          </ul>
+          <p style="margin: 24px 0 0; font-size: 16px; color: #34433B">Не уверены? Посчитайте ниже, сколько на самом деле стоит час вашего сотрудника.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ГАРАНТИИ -->
+  <section id="garantii" style="padding-top: 112px; padding-bottom: 112px">
+    <div class="wrap split">
+      <div style="display: flex; flex-direction: column; gap: 20px">
+        <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #55665D">Гарантии</p>
+        <h2 class="h2" style="margin: 0; font-size: 48px; line-height: 1.05; font-weight: 800; letter-spacing: -0.03em; text-wrap: balance">Четыре обещания, которые записаны в договоре</h2>
+        <p style="margin: 0; color: #34433B; font-size: 18px">Не в презентации — в приложении с SLA. Не выполнили — несём ответственность деньгами.</p>
+      </div>
+      <div class="two ruled" style="border-top: 2px solid #0F2019">
+        <div style="padding: 32px 32px 40px 0; border-bottom: 1px solid #D5DED4; display: flex; flex-direction: column; gap: 12px">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0F2019" stroke-width="2" aria-hidden="true"><circle cx="9" cy="7" r="3.5"></circle><path d="M2.5 20c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 6.8M18.5 13.8c1.8.9 3 2.8 3 5.2"></path></svg>
+          <h3 style="margin: 0; font-size: 22px; font-weight: 700">Выход по заявке</h3>
+          <p style="margin: 0; color: #34433B; font-size: 16px">Держим резерв под каждый объект. Не вышел человек — замена приезжает в ту же смену, а невыход вы не оплачиваете.</p>
+        </div>
+        <div style="padding: 32px 0 40px 32px; border-bottom: 1px solid #D5DED4; border-left: 1px solid #D5DED4; display: flex; flex-direction: column; gap: 12px">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0F2019" stroke-width="2" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1"></rect><path d="M8 8h8M8 12h8M8 16h5"></path></svg>
+          <h3 style="margin: 0; font-size: 22px; font-weight: 700">Табель, которому можно верить</h3>
+          <p style="margin: 0; color: #34433B; font-size: 16px">Каждый день сверяем часы по фамилиям с вашим мастером. В счёт попадает только то, что он подтвердил.</p>
+        </div>
+        <div style="padding: 32px 32px 40px 0; display: flex; flex-direction: column; gap: 12px">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0F2019" stroke-width="2" aria-hidden="true"><path d="M4 14a8 8 0 0 1 16 0"></path><path d="M2 14h20v3H2z"></path><path d="M12 6V3"></path></svg>
+          <h3 style="margin: 0; font-size: 22px; font-weight: 700">Бригадир на объекте</h3>
+          <p style="margin: 0; color: #34433B; font-size: 16px">Инструктаж, расстановка, дисциплина. Вы ставите задачу одному человеку, а не тридцати.</p>
+        </div>
+        <div style="padding: 32px 0 40px 32px; border-left: 1px solid #D5DED4; display: flex; flex-direction: column; gap: 12px">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0F2019" stroke-width="2" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"></path><path d="M8.5 12l2.5 2.5 4.5-5"></path></svg>
+          <h3 style="margin: 0; font-size: 22px; font-weight: 700">Проверяемый подрядчик</h3>
+          <p style="margin: 0; color: #34433B; font-size: 16px">Открытые реквизиты, реальные налоги, полный пакет документов. До старта даём всё для проверки вашей службой безопасности.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ШТАТ VS АУТСОРСИНГ -->
+  <section style="padding-bottom: 112px">
+    <div class="wrap">
+      <h2 class="h2" style="margin: 0 0 48px; font-size: 48px; line-height: 1.05; font-weight: 800; letter-spacing: -0.03em; max-width: 18em; text-wrap: balance">Что уходит с вашего стола, когда участок у нас</h2>
+      <div class="two" style="gap: 24px">
+        <div style="border: 1px solid #D5DED4; border-radius: 6px; padding: 36px; background: #FFFFFF">
+          <p style="margin: 0 0 20px; font-weight: 700; font-size: 20px; color: #55665D">Свой штат</p>
+          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 17px; color: #34433B">
+            <li style="display: flex; gap: 12px"><span aria-hidden="true" style="color: #8A8D93">—</span>Вакансии, собеседования, оформление и увольнения</li>
+            <li style="display: flex; gap: 12px"><span aria-hidden="true" style="color: #8A8D93">—</span>Отпускные, больничные и простой в несезон</li>
+            <li style="display: flex; gap: 12px"><span aria-hidden="true" style="color: #8A8D93">—</span>Поиск замены в 6 утра перед сменой</li>
+            <li style="display: flex; gap: 12px"><span aria-hidden="true" style="color: #8A8D93">—</span>Кадровик, расчётчик и мастер на каждого</li>
+            <li style="display: flex; gap: 12px"><span aria-hidden="true" style="color: #8A8D93">—</span>Пик пришёл — людей набрать не успели</li>
+          </ul>
+        </div>
+        <div style="border-radius: 6px; padding: 36px; background: #0F2019; color: #F3F6F2">
+          <p style="margin: 0 0 20px; font-weight: 700; font-size: 20px; color: #3DDC84">С «Честной сменой»</p>
+          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 17px">
+            <li style="display: flex; gap: 12px"><span aria-hidden="true" style="color: #3DDC84">✓</span>Присылаете заявку: сколько людей, когда, куда</li>
+            <li style="display: flex; gap: 12px"><span aria-hidden="true" style="color: #3DDC84">✓</span>Принимаете сделанную работу</li>
+            <li style="display: flex; gap: 12px"><span aria-hidden="true" style="color: #3DDC84">✓</span>Сверяете табель — пять минут в день</li>
+            <li style="display: flex; gap: 12px"><span aria-hidden="true" style="color: #3DDC84">✓</span>Увеличиваете или сокращаете численность за 1–2 дня</li>
+            <li style="display: flex; gap: 12px"><span aria-hidden="true" style="color: #3DDC84">✓</span>Получаете один счёт и акт в месяц</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- СТАВКИ -->
+  <section id="stavki" style="background: #E5ECE4; padding-top: 112px; padding-bottom: 112px">
+    <div class="wrap split">
+      <div style="display: flex; flex-direction: column; gap: 20px">
+        <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #55665D">Ставки</p>
+        <h2 class="h2" style="margin: 0; font-size: 48px; line-height: 1.05; font-weight: 800; letter-spacing: -0.03em">Цена часа без сюрпризов</h2>
+        <p style="margin: 0; color: #34433B; font-size: 18px">В ставку уже входят подбор, бригадир, замены и документы. Итог зависит от региона, графика и объёма — точную цифру назовём после заявки.</p>
+        <div style="margin-top: 16px; background: #0F2019; color: #F3F6F2; border-radius: 6px; padding: 28px">
+          <p style="margin: 0 0 14px; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #9DB3A8">Пример расчёта</p>
+          <p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 15px; line-height: 1.8; color: #C7D7CE">10 комплектовщиков × 11 ч × 22 смены<br>= 2 420 часов × 350 ₽</p>
+          <p style="margin: 10px 0 0; font-weight: 800; font-size: 36px; letter-spacing: -0.02em; color: #3DDC84">от 847 000 ₽<span style="font-size: 17px; font-weight: 500; color: #9DB3A8"> / месяц</span></p>
+        </div>
+      </div>
+      <div class="tbl" style="background: #FFFFFF; border-radius: 6px; border: 1px solid #D5DED4">
+        <table style="width: 100%; border-collapse: collapse; min-width: 480px">
+          <tbody>
+            <tr><td style="padding: 22px 28px; border-bottom: 1px solid #E9EFE8"><div style="font-weight: 700; font-size: 18px">Грузчик</div><div style="color: #55665D; font-size: 15px">погрузка-разгрузка, перемещение ТМЦ</div></td><td style="padding: 22px 28px; border-bottom: 1px solid #E9EFE8; text-align: right; white-space: nowrap; font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 18px">от 350 ₽/ч</td></tr>
+            <tr><td style="padding: 22px 28px; border-bottom: 1px solid #E9EFE8"><div style="font-weight: 700; font-size: 18px">Комплектовщик</div><div style="color: #55665D; font-size: 15px">сборка заказов по ТСД или листу подбора</div></td><td style="padding: 22px 28px; border-bottom: 1px solid #E9EFE8; text-align: right; white-space: nowrap; font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 18px">от 350 ₽/ч</td></tr>
+            <tr><td style="padding: 22px 28px; border-bottom: 1px solid #E9EFE8"><div style="font-weight: 700; font-size: 18px">Упаковщик, маркировщик</div><div style="color: #55665D; font-size: 15px">упаковка, стикеровка, «Честный знак»</div></td><td style="padding: 22px 28px; border-bottom: 1px solid #E9EFE8; text-align: right; white-space: nowrap; font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 18px">от 320 ₽/ч</td></tr>
+            <tr><td style="padding: 22px 28px; border-bottom: 1px solid #E9EFE8"><div style="font-weight: 700; font-size: 18px">Оператор производственной линии</div><div style="color: #55665D; font-size: 15px">фасовка, укладка, контроль на конвейере</div></td><td style="padding: 22px 28px; border-bottom: 1px solid #E9EFE8; text-align: right; white-space: nowrap; font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 18px">от 450 ₽/ч</td></tr>
+            <tr><td style="padding: 22px 28px; border-bottom: 1px solid #E9EFE8"><div style="font-weight: 700; font-size: 18px">Работник торгового зала</div><div style="color: #55665D; font-size: 15px">выкладка, ротация, переоценка, инвентаризация</div></td><td style="padding: 22px 28px; border-bottom: 1px solid #E9EFE8; text-align: right; white-space: nowrap; font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 18px">от 300 ₽/ч</td></tr>
+            <tr><td style="padding: 22px 28px; border-bottom: 1px solid #E9EFE8"><div style="font-weight: 700; font-size: 18px">Разнорабочий</div><div style="color: #55665D; font-size: 15px">склад, стройка, агро</div></td><td style="padding: 22px 28px; border-bottom: 1px solid #E9EFE8; text-align: right; white-space: nowrap; font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 18px">от 300 ₽/ч</td></tr>
+            <tr><td style="padding: 22px 28px"><div style="font-weight: 700; font-size: 18px">Уборщик</div><div style="color: #55665D; font-size: 15px">цеха, склады, торговые площади</div></td><td style="padding: 22px 28px; text-align: right; white-space: nowrap; font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 18px">от 250 ₽/ч</td></tr>
+          </tbody>
+        </table>
+        <p style="margin: 0; padding: 18px 28px; border-top: 1px solid #D5DED4; font-size: 15px; color: #34433B">Можно платить за результат — за паллету, короб или строку заказа. Подберём базу расчёта по вашим данным.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- КАЛЬКУЛЯТОР -->
+  <section id="kalkulyator" style="padding-top: 112px; padding-bottom: 32px">
+    <div class="wrap split">
+      <div style="display: flex; flex-direction: column; gap: 20px">
+        <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #55665D">Калькулятор</p>
+        <h2 class="h2" style="margin: 0; font-size: 48px; line-height: 1.05; font-weight: 800; letter-spacing: -0.03em; text-wrap: balance">Сколько на самом деле стоит час вашего сотрудника</h2>
+        <p style="margin: 0; color: #34433B; font-size: 18px">Зарплата на руки — это только часть. Сверху налоги, отпускные, кадровик, мастер и часы, когда человек на смене, а работы нет. Подставьте свои цифры и сравните со ставкой из таблицы выше.</p>
+        <p style="margin: 0; color: #55665D; font-size: 14px">Расчёт ориентировочный: НДФЛ 13%, страховые взносы с травматизмом около 31%, отпускные и больничные около 9%, кадры, спецодежда и мастер около 13% к затратам на труд. Цифры для вашей компании посчитаем точно.</p>
+      </div>
+      <div style="background: #FFFFFF; border: 1px solid #D5DED4; border-radius: 6px; padding: 36px; display: flex; flex-direction: column; gap: 22px">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px">
+          <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600">Зарплата на руки, ₽ в час<input id="k-net" type="number" min="100" step="10" value="250" inputmode="numeric" style="height: 52px; border: 1px solid #C1CDC2; border-radius: 4px; padding: 0 14px; font-size: 18px; background: #FFFFFF; color: #0F2019"></label>
+          <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600">Сколько человек<input id="k-n" type="number" min="1" step="1" value="15" inputmode="numeric" style="height: 52px; border: 1px solid #C1CDC2; border-radius: 4px; padding: 0 14px; font-size: 18px; background: #FFFFFF; color: #0F2019"></label>
+          <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600">Часов на человека в месяц<input id="k-h" type="number" min="1" step="1" value="176" inputmode="numeric" style="height: 52px; border: 1px solid #C1CDC2; border-radius: 4px; padding: 0 14px; font-size: 18px; background: #FFFFFF; color: #0F2019"></label>
+          <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600">Реальная загрузка штата, %<input id="k-u" type="number" min="30" max="100" step="5" value="85" inputmode="numeric" style="height: 52px; border: 1px solid #C1CDC2; border-radius: 4px; padding: 0 14px; font-size: 18px; background: #FFFFFF; color: #0F2019"></label>
+        </div>
+        <div style="border-top: 1px solid #D5DED4; padding-top: 18px; display: flex; flex-direction: column; gap: 10px; font-size: 16px">
+          <div style="display: flex; justify-content: space-between; gap: 16px"><span style="color: #34433B">Начисленная зарплата с НДФЛ</span><span id="k-r1" style="font-family: 'JetBrains Mono', monospace; font-weight: 700">—</span></div>
+          <div style="display: flex; justify-content: space-between; gap: 16px"><span style="color: #34433B">+ отпускные и больничные</span><span id="k-r2" style="font-family: 'JetBrains Mono', monospace; font-weight: 700">—</span></div>
+          <div style="display: flex; justify-content: space-between; gap: 16px"><span style="color: #34433B">+ страховые взносы</span><span id="k-r3" style="font-family: 'JetBrains Mono', monospace; font-weight: 700">—</span></div>
+          <div style="display: flex; justify-content: space-between; gap: 16px"><span style="color: #34433B">+ кадры, спецодежда, мастер</span><span id="k-r4" style="font-family: 'JetBrains Mono', monospace; font-weight: 700">—</span></div>
+          <div style="display: flex; justify-content: space-between; gap: 16px"><span style="color: #34433B">÷ загрузка (часы без работы)</span><span id="k-r5" style="font-family: 'JetBrains Mono', monospace; font-weight: 700">—</span></div>
+        </div>
+        <div style="background: #0F2019; color: #F3F6F2; border-radius: 6px; padding: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px">
+          <div><div style="font-size: 13px; color: #9DB3A8">Полезный час вашего сотрудника</div><div id="k-hour" style="font-weight: 800; font-size: 34px; letter-spacing: -0.02em; color: #3DDC84">—</div></div>
+          <div><div style="font-size: 13px; color: #9DB3A8">Ваши затраты на участок в месяц</div><div id="k-month" style="font-weight: 800; font-size: 34px; letter-spacing: -0.02em">—</div></div>
+        </div>
+        <a href="#raschet" style="align-self: flex-start; background: #3DDC84; color: #0F2019; text-decoration: none; font-weight: 700; font-size: 17px; padding: 16px 24px; border-radius: 4px">Сравнить с нашей ставкой на ваших цифрах</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ОТРАСЛИ -->
+  <section style="padding-top: 112px; padding-bottom: 112px">
+    <div class="wrap">
+      <h2 class="h2" style="margin: 0 0 48px; font-size: 48px; line-height: 1.05; font-weight: 800; letter-spacing: -0.03em">Где мы закрываем смены</h2>
+      <div class="three ruled" style="border-top: 2px solid #0F2019">
+        <div style="padding: 28px 32px 36px 0; border-bottom: 1px solid #D5DED4"><h3 style="margin: 0 0 8px; font-size: 22px; font-weight: 700">Склады и РЦ</h3><p style="margin: 0; color: #34433B; font-size: 16px">Приёмка, размещение, комплектация, отгрузка. Пики распродаж и маркетплейсов.</p></div>
+        <div style="padding: 28px 32px 36px 32px; border-bottom: 1px solid #D5DED4; border-left: 1px solid #D5DED4"><h3 style="margin: 0 0 8px; font-size: 22px; font-weight: 700">Производство</h3><p style="margin: 0; color: #34433B; font-size: 16px">Операторы линий, фасовщики, упаковщики. Графики 2/2, 5/2, вахта.</p></div>
+        <div style="padding: 28px 0 36px 32px; border-bottom: 1px solid #D5DED4; border-left: 1px solid #D5DED4"><h3 style="margin: 0 0 8px; font-size: 22px; font-weight: 700">Розница и FMCG</h3><p style="margin: 0; color: #34433B; font-size: 16px">Выкладка, инвентаризации, переоценка, открытие новых магазинов.</p></div>
+        <div style="padding: 28px 32px 36px 0"><h3 style="margin: 0 0 8px; font-size: 22px; font-weight: 700">Агро и переработка</h3><p style="margin: 0; color: #34433B; font-size: 16px">Сезон уборки, сортировка, калибровка, переработка урожая.</p></div>
+        <div style="padding: 28px 32px 36px 32px; border-left: 1px solid #D5DED4"><h3 style="margin: 0 0 8px; font-size: 22px; font-weight: 700">Стройка</h3><p style="margin: 0; color: #34433B; font-size: 16px">Подсобные рабочие, разгрузка материалов, уборка объектов.</p></div>
+        <div style="padding: 28px 0 36px 32px; border-left: 1px solid #D5DED4"><h3 style="margin: 0 0 8px; font-size: 22px; font-weight: 700">Клининг площадок</h3><p style="margin: 0; color: #34433B; font-size: 16px">Ежедневная уборка цехов, складов и прилегающей территории.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЗАПУСК -->
+  <section id="zapusk" style="background: #0F2019; color: #F3F6F2; padding-top: 112px; padding-bottom: 112px">
+    <div class="wrap">
+      <h2 class="h2" style="margin: 0 0 56px; font-size: 48px; line-height: 1.05; font-weight: 800; letter-spacing: -0.03em; max-width: 16em; text-wrap: balance">От заявки до первой смены — 48 часов</h2>
+      <ol class="four" style="margin: 0; padding: 0; list-style: none">
+        <li style="border-top: 3px solid #3DDC84; padding-top: 24px; display: flex; flex-direction: column; gap: 10px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #3DDC84">15 минут</span>
+          <h3 style="margin: 0; font-size: 22px; font-weight: 700">Заявка</h3>
+          <p style="margin: 0; color: #9DB3A8; font-size: 16px">Позиции, численность, график и адрес объекта.</p>
+        </li>
+        <li style="border-top: 3px solid #3DDC84; padding-top: 24px; display: flex; flex-direction: column; gap: 10px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #3DDC84">в тот же день</span>
+          <h3 style="margin: 0; font-size: 22px; font-weight: 700">Расчёт и договор</h3>
+          <p style="margin: 0; color: #9DB3A8; font-size: 16px">Ставка, сроки выхода, SLA. Подписываем, в том числе по ЭДО.</p>
+        </li>
+        <li style="border-top: 3px solid #3DDC84; padding-top: 24px; display: flex; flex-direction: column; gap: 10px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #3DDC84">через 24–48 часов</span>
+          <h3 style="margin: 0; font-size: 22px; font-weight: 700">Выход бригады</h3>
+          <p style="margin: 0; color: #9DB3A8; font-size: 16px">Бригадир, инструктаж, расстановка по участкам.</p>
+        </li>
+        <li style="border-top: 3px solid #3DDC84; padding-top: 24px; display: flex; flex-direction: column; gap: 10px">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #3DDC84">каждый день</span>
+          <h3 style="margin: 0; font-size: 22px; font-weight: 700">Сверка и оплата</h3>
+          <p style="margin: 0; color: #9DB3A8; font-size: 16px">Табель — ежедневно, акт и счёт — раз в месяц.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ПРОВЕРКА ПОДРЯДЧИКА -->
+  <section id="proverka" style="padding-top: 112px; padding-bottom: 0">
+    <div class="wrap split">
+      <div style="display: flex; flex-direction: column; gap: 20px">
+        <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #55665D">Перед выбором подрядчика</p>
+        <h2 class="h2" style="margin: 0; font-size: 48px; line-height: 1.05; font-weight: 800; letter-spacing: -0.03em; text-wrap: balance">7 вопросов, которые стоит задать любому аутсорсеру</h2>
+        <p style="margin: 0; color: #34433B; font-size: 18px">С октября 2026 года налоговая и закон о платформенной экономике сильно ужесточили правила для работы с линейным персоналом. Если подрядчик работает «по-серому», вопросы зададут и вам. Задайте эти вопросы нам — ответим на каждый документами.</p>
+        <a href="#raschet" style="align-self: flex-start; background: #0F2019; color: #F3F6F2; text-decoration: none; font-weight: 700; font-size: 17px; padding: 16px 24px; border-radius: 4px">Запросить наши документы</a>
+      </div>
+      <ol style="margin: 0; padding: 0; list-style: none; border-top: 2px solid #0F2019">
+        <li style="display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 16px; padding: 22px 0; border-bottom: 1px solid #D5DED4"><span style="font-family: 'JetBrains Mono', monospace; color: #13924F; font-weight: 700">01</span><span><b>Как оформлены люди?</b><br><span style="color: #34433B">Самозанятые на постоянных сменах — главный повод для переквалификации отношений в трудовые.</span></span></li>
+        <li style="display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 16px; padding: 22px 0; border-bottom: 1px solid #D5DED4"><span style="font-family: 'JetBrains Mono', monospace; color: #13924F; font-weight: 700">02</span><span><b>Есть ли долги по налогам и исполнительные производства?</b><br><span style="color: #34433B">Проверяется по ИНН за пару минут. Попросите справку об отсутствии задолженности.</span></span></li>
+        <li style="display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 16px; padding: 22px 0; border-bottom: 1px solid #D5DED4"><span style="font-family: 'JetBrains Mono', monospace; color: #13924F; font-weight: 700">03</span><span><b>Что в договоре про невыход и замену?</b><br><span style="color: #34433B">Нужны сроки замены и деньги за срыв, а не «приложим все усилия».</span></span></li>
+        <li style="display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 16px; padding: 22px 0; border-bottom: 1px solid #D5DED4"><span style="font-family: 'JetBrains Mono', monospace; color: #13924F; font-weight: 700">04</span><span><b>Кто ведёт табель и как его сверяют?</b><br><span style="color: #34433B">Табель по фамилиям каждый день — единственная защита от приписанных часов.</span></span></li>
+        <li style="display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 16px; padding: 22px 0; border-bottom: 1px solid #D5DED4"><span style="font-family: 'JetBrains Mono', monospace; color: #13924F; font-weight: 700">05</span><span><b>Как проверяют документы иностранных работников?</b><br><span style="color: #34433B">Штрафы за нарушения миграционных правил для компании — сотни тысяч рублей за каждого человека.</span></span></li>
+        <li style="display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 16px; padding: 22px 0; border-bottom: 1px solid #D5DED4"><span style="font-family: 'JetBrains Mono', monospace; color: #13924F; font-weight: 700">06</span><span><b>Есть ли свой человек на объекте?</b><br><span style="color: #34433B">Без бригадира вы управляете чужими людьми сами — и платите за это дважды.</span></span></li>
+        <li style="display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 16px; padding: 22px 0; border-bottom: 1px solid #D5DED4"><span style="font-family: 'JetBrains Mono', monospace; color: #13924F; font-weight: 700">07</span><span><b>Работает ли подрядчик через платформы подработки?</b><br><span style="color: #34433B">С 1 октября 2026 года платформы обязаны ограничивать работу одного человека на одного заказчика: не больше 60 часов в месяц полгода подряд.</span></span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ВОПРОСЫ -->
+  <section id="faq" style="padding-top: 112px; padding-bottom: 112px">
+    <div class="wrap split">
+      <h2 class="h2" style="margin: 0; font-size: 48px; line-height: 1.05; font-weight: 800; letter-spacing: -0.03em; text-wrap: balance">Что спрашивают перед стартом</h2>
+      <div style="border-top: 2px solid #0F2019">
+        <details style="border-bottom: 1px solid #D5DED4" open="">
+          <summary style="display: flex; justify-content: space-between; gap: 24px; padding: 24px 0; font-weight: 700; font-size: 20px">Это не дороже своего штата?<span class="plus" aria-hidden="true" style="font-weight: 400; font-size: 28px; line-height: 1">+</span></summary>
+          <p style="margin: 0 0 24px; color: #34433B; font-size: 17px; max-width: 38em">Ставка выглядит выше зарплаты в час, но в неё уже входят расходы, которые в штате размазаны по бюджету: найм, текучка, отпускные, простой, кадровик и мастер. Посчитаем обе модели на ваших цифрах — решите сами.</p>
+        </details>
+        <details style="border-bottom: 1px solid #D5DED4">
+          <summary style="display: flex; justify-content: space-between; gap: 24px; padding: 24px 0; font-weight: 700; font-size: 20px">Кто отвечает, если человек не вышел или сработал плохо?<span class="plus" aria-hidden="true" style="font-weight: 400; font-size: 28px; line-height: 1">+</span></summary>
+          <p style="margin: 0 0 24px; color: #34433B; font-size: 17px; max-width: 38em">Мы. Замена — в течение смены, невыход не оплачивается. Требования к качеству и порядок замен закреплены в приложении к договору.</p>
+        </details>
+        <details style="border-bottom: 1px solid #D5DED4">
+          <summary style="display: flex; justify-content: space-between; gap: 24px; padding: 24px 0; font-weight: 700; font-size: 20px">Как вы отбираете людей?<span class="plus" aria-hidden="true" style="font-weight: 400; font-size: 28px; line-height: 1">+</span></summary>
+          <p style="margin: 0 0 24px; color: #34433B; font-size: 17px; max-width: 38em">Собеседование, проверка документов, инструктаж по технике безопасности. Первые смены новичок работает под контролем бригадира.</p>
+        </details>
+        <details style="border-bottom: 1px solid #D5DED4">
+          <summary style="display: flex; justify-content: space-between; gap: 24px; padding: 24px 0; font-weight: 700; font-size: 20px">Работаете в моём регионе?<span class="plus" aria-hidden="true" style="font-weight: 400; font-size: 28px; line-height: 1">+</span></summary>
+          <p style="margin: 0 0 24px; color: #34433B; font-size: 17px; max-width: 38em">Да, по всей России. Один договор и один менеджер на все ваши площадки. Срок выхода в небольших городах назовём при расчёте.</p>
+        </details>
+        <details style="border-bottom: 1px solid #D5DED4">
+          <summary style="display: flex; justify-content: space-between; gap: 24px; padding: 24px 0; font-weight: 700; font-size: 20px">Какие документы мы получим?<span class="plus" aria-hidden="true" style="font-weight: 400; font-size: 28px; line-height: 1">+</span></summary>
+          <p style="margin: 0 0 24px; color: #34433B; font-size: 17px; max-width: 38em">Договор оказания услуг, приложение со ставками и SLA, ежедневные табели, ежемесячные акты и счета. До подписания — выписку из ЕГРИП, справку об отсутствии налоговой задолженности и проект договора для вашей службы безопасности.</p>
+        </details>
+        <details style="border-bottom: 1px solid #D5DED4">
+          <summary style="display: flex; justify-content: space-between; gap: 24px; padding: 24px 0; font-weight: 700; font-size: 20px">Работаете с иностранными гражданами?<span class="plus" aria-hidden="true" style="font-weight: 400; font-size: 28px; line-height: 1">+</span></summary>
+          <p style="margin: 0 0 24px; color: #34433B; font-size: 17px; max-width: 38em">Только с полным пакетом документов: патент или разрешение на работу, регистрация, медицинский полис. Проверяем каждого до выхода на объект. Если для вашего объекта нужны только граждане РФ — пропишем это в заявке.</p>
+        </details>
+        <details style="border-bottom: 1px solid #D5DED4">
+          <summary style="display: flex; justify-content: space-between; gap: 24px; padding: 24px 0; font-weight: 700; font-size: 20px">Как быстро вы отвечаете на заявку?<span class="plus" aria-hidden="true" style="font-weight: 400; font-size: 28px; line-height: 1">+</span></summary>
+          <p style="margin: 0 0 24px; color: #34433B; font-size: 17px; max-width: 38em">В рабочее время перезваниваем в течение 15 минут. Ставку, сроки выхода и проект договора присылаем в течение 2 часов.</p>
+        </details>
+        <details style="border-bottom: 1px solid #D5DED4">
+          <summary style="display: flex; justify-content: space-between; gap: 24px; padding: 24px 0; font-weight: 700; font-size: 20px">Какой минимальный заказ?<span class="plus" aria-hidden="true" style="font-weight: 400; font-size: 28px; line-height: 1">+</span></summary>
+          <p style="margin: 0 0 24px; color: #34433B; font-size: 17px; max-width: 38em">От 3 человек на смену. Разовые задачи — разгрузку, переезд, инвентаризацию — тоже берём.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЗАЯВКА -->
+  <section id="raschet" style="background: #0F2019; color: #F3F6F2; padding-top: 112px; padding-bottom: 112px">
+    <div class="wrap split">
+      <div style="display: flex; flex-direction: column; gap: 20px">
+        <h2 class="h2" style="margin: 0; font-size: 48px; line-height: 1.05; font-weight: 800; letter-spacing: -0.03em; text-wrap: balance">Рассчитаем смену за 2 часа</h2>
+        <p style="margin: 0; color: #9DB3A8; font-size: 18px">Оставьте заявку — пришлём ставку, сроки выхода и проект договора. Или напишите напрямую.</p>
+        <div style="display: flex; flex-direction: column; margin-top: 16px; border-top: 1px solid #24382F">
+          <div style="padding: 18px 0; border-bottom: 1px solid #24382F; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap"><div><div style="font-size: 13px; color: #9DB3A8">Телефон</div><a id="c-phone" href="tel:+79057836568" style="display: block; font-weight: 700; font-size: 22px; color: #F3F6F2; text-decoration: none">+7 (905) 783-65-68</a></div><button type="button" class="copy" data-copy="c-phone" style="background: transparent; color: #F3F6F2; border: 1px solid #24382F; border-radius: 4px; font: 500 14px Onest, sans-serif; padding: 10px 14px; cursor: pointer; min-height: 44px">Скопировать</button></div>
+          <div style="padding: 18px 0; border-bottom: 1px solid #24382F; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap"><div style="min-width: 0"><div style="font-size: 13px; color: #9DB3A8">Почта</div><a id="c-mail" href="mailto:Worktime.smena@gmail.com" style="display: block; font-weight: 700; font-size: 22px; color: #F3F6F2; text-decoration: none; overflow-wrap: anywhere">Worktime.smena@gmail.com</a></div><button type="button" class="copy" data-copy="c-mail" style="background: transparent; color: #F3F6F2; border: 1px solid #24382F; border-radius: 4px; font: 500 14px Onest, sans-serif; padding: 10px 14px; cursor: pointer; min-height: 44px">Скопировать</button></div>
+        </div>
+      </div>
+      <div style="min-width:0"><form style="position: relative; background: #F3F6F2; color: #0F2019; border-radius: 6px; padding: 40px; display: flex; flex-direction: column; gap: 18px" id="lead" novalidate>
+        
+          <div aria-hidden="true" style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden"><label>Не заполняйте это поле<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px">
+            <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600">Имя<input name="name" type="text" required="" style="height: 52px; border: 1px solid #C1CDC2; border-radius: 4px; padding: 0 14px; font-size: 16px; background: #FFFFFF; color: #0F2019"></label>
+            <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600">Телефон<input name="phone" type="tel" required="" placeholder="+7" style="height: 52px; border: 1px solid #C1CDC2; border-radius: 4px; padding: 0 14px; font-size: 16px; background: #FFFFFF; color: #0F2019"></label>
+            <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600">Компания<input name="company" type="text" style="height: 52px; border: 1px solid #C1CDC2; border-radius: 4px; padding: 0 14px; font-size: 16px; background: #FFFFFF; color: #0F2019"></label>
+            <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600">Город объекта<input name="city" type="text" style="height: 52px; border: 1px solid #C1CDC2; border-radius: 4px; padding: 0 14px; font-size: 16px; background: #FFFFFF; color: #0F2019"></label>
+            <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600">Кто нужен<select name="pos" style="height: 52px; border: 1px solid #C1CDC2; border-radius: 4px; padding: 0 14px; font-size: 16px; background: #FFFFFF; color: #0F2019"><option>Грузчики</option><option>Комплектовщики</option><option>Упаковщики</option><option>Операторы линий</option><option>Работники торгового зала</option><option>Разнорабочие</option><option>Уборщики</option><option>Несколько позиций</option></select></label>
+            <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600">Сколько человек<input name="qty" type="number" min="1" placeholder="10" style="height: 52px; border: 1px solid #C1CDC2; border-radius: 4px; padding: 0 14px; font-size: 16px; background: #FFFFFF; color: #0F2019"></label>
+          </div>
+          <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600">Задача и сроки<textarea name="note" rows="3" placeholder="Например: 20 комплектовщиков на РЦ с 1 декабря, 2/2 по 12 часов" style="border: 1px solid #C1CDC2; border-radius: 4px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #0F2019; resize: vertical"></textarea></label>
+          <label style="display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 12px; align-items: start; font-size: 14px; line-height: 1.5; color: #34433B; cursor: pointer"><input name="consent" type="checkbox" required="" style="width: 22px; height: 22px; margin: 0; accent-color: #13924F"><span>Даю <a href="/soglasie.html" target="_blank" style="color: #0F2019">согласие на обработку персональных данных</a> и подтверждаю, что ознакомлен(а) с <a href="/politika.html" target="_blank" style="color: #0F2019">Политикой обработки персональных данных</a>. <span style="color: #B42318">*</span></span></label>
+          <p id="consent-err" hidden style="margin: -6px 0 0; font-size: 13px; color: #B42318">Без согласия на обработку персональных данных мы не сможем принять заявку.</p>
+          <button type="submit" id="submit-btn" style="background: #3DDC84; color: #0F2019; border: 0; border-radius: 4px; font-weight: 700; font-size: 18px; height: 60px; cursor: pointer; font-family: inherit">Сформировать заявку</button>
+        
+      </form>
+      <div id="result" hidden style="background: #F3F6F2; color: #0F2019; border-radius: 6px; padding: 40px; display: flex; flex-direction: column; gap: 16px">
+        <h3 style="margin: 0; font-size: 26px; font-weight: 800">Заявка готова — осталось отправить</h3>
+        <p style="margin: 0; color: #34433B">Нажмите «Отправить на почту» — откроется письмо с заполненной заявкой. Или скопируйте текст и пришлите удобным способом. Срочно — звоните <a href="tel:+79057836568" style="color: #0F2019; font-weight: 700">+7 (905) 783-65-68</a>.</p>
+        <pre id="result-text" style="margin: 0; white-space: pre-wrap; word-break: break-word; background: #FFFFFF; border: 1px solid #D5DED4; border-radius: 4px; padding: 16px; font: 14px/1.6 'JetBrains Mono', monospace; user-select: all"></pre>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a id="mail-lead" href="mailto:Worktime.smena@gmail.com" style="background: #0F2019; color: #F3F6F2; border-radius: 4px; font: 700 17px Onest, sans-serif; padding: 16px 24px; text-decoration: none">Отправить на почту</a>
+          <button type="button" id="copy-lead" style="background: #3DDC84; color: #0F2019; border: 0; border-radius: 4px; font: 700 17px Onest, sans-serif; padding: 16px 24px; cursor: pointer">Скопировать заявку</button>
+          <button type="button" id="edit-lead" style="background: transparent; color: #0F2019; border: 1px solid #0F2019; border-radius: 4px; font: 600 17px Onest, sans-serif; padding: 16px 24px; cursor: pointer">Изменить</button>
+        </div>
+      </div>
+
+      <div id="sent" hidden style="background: #F3F6F2; color: #0F2019; border-radius: 6px; padding: 40px; display: flex; flex-direction: column; gap: 14px">
+        <span style="width: 48px; height: 48px; border-radius: 50%; background: #3DDC84; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0F2019" stroke-width="3" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg></span>
+        <h3 style="margin: 0; font-size: 26px; font-weight: 800">Заявка отправлена</h3>
+        <p style="margin: 0; color: #34433B">Перезвоним в рабочее время в течение 15 минут. Если срочно — звоните: <a href="tel:+79057836568" style="color: #0F2019; font-weight: 700">+7 (905) 783-65-68</a>.</p>
+      </div>
+      <p id="err" hidden></p></div>
+    </div>
+  </section>
+
+  <!-- ПОДВАЛ -->
+  <footer style="background: #08140F; color: #9DB3A8; padding-top: 48px; padding-bottom: 48px; font-size: 14px">
+    <div class="wrap" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px">
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <span style="color: #F3F6F2; font-weight: 700; font-size: 16px">«Честная смена» · ИП Корягина Анна Игоревна</span>
+        <span>ИНН 231122590177 · ОГРНИП 324237500432690</span>
+        <span>Р/с 40802810130740007641 в Краснодарском отделении № 8619 ПАО Сбербанк</span>
+        <span>БИК 040349602 · К/с 30101810100000000602</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <span style="color: #F3F6F2">+7 (905) 783-65-68 · Worktime.smena@gmail.com</span>
+        <a href="/politika.html" style="color: #9DB3A8">Политика обработки персональных данных</a>
+        <a href="/soglasie.html" style="color: #9DB3A8">Согласие на обработку персональных данных</a>
+        <span>Аутсорсинг линейного персонала по всей России · © 2026 «Честная смена»</span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var API_URL=null; // адрес приёма заявок; пока сервер недоступен — заявка отправляется по почте
+  var form=document.getElementById('lead'), res=document.getElementById('result'), out=document.getElementById('result-text');
+  var consent=form.querySelector('[name=consent]'), cerr=document.getElementById('consent-err');
+  consent.addEventListener('change',function(){ if(consent.checked) cerr.hidden=true; });
+  var btn=document.getElementById('submit-btn'), sent=document.getElementById('sent'), busy=false;
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(busy) return;
+    var f=new FormData(form), g=function(k){return (f.get(k)||'').toString().trim()};
+    if(!g('name')||!g('phone')){ form.querySelector('[name=' + (!g('name')?'name':'phone') + ']').focus(); return; }
+    if(g('phone').replace(/\D/g,'').length<10){ var ph=form.querySelector('[name=phone]'); ph.setCustomValidity('Укажите номер полностью'); ph.reportValidity(); ph.setCustomValidity(''); return; }
+    if(!consent.checked){ cerr.hidden=false; consent.focus(); return; }
+    out.textContent=['Заявка на персонал — «Честная смена»','Контакт: '+g('name')+(g('company')?', '+g('company'):''),'Телефон: '+g('phone'),
+      g('city')?'Город объекта: '+g('city'):'', 'Кто нужен: '+g('pos')+(g('qty')?' — '+g('qty')+' чел.':''), g('note')?'Задача: '+g('note'):''].filter(Boolean).join('\n');
+    var payload={name:g('name'),phone:g('phone'),company:g('company'),city:g('city'),pos:g('pos'),qty:g('qty'),note:g('note'),website:g('website'),
+      consent:true,consent_doc:'soglasie-2026-11-06',page:location.href,ts:new Date().toISOString()};
+    var mail='mailto:Worktime.smena@gmail.com?subject='+encodeURIComponent('Заявка на персонал — '+(g('company')||g('name')))+'&body='+encodeURIComponent(out.textContent);
+    document.getElementById('mail-lead').setAttribute('href',mail);
+    if(!API_URL){ form.hidden=true; res.hidden=false; return; }
+    busy=true; var label=btn.textContent; btn.textContent='Отправляем…'; btn.disabled=true;
+    var ctl=new AbortController(), timer=setTimeout(function(){ctl.abort()},12000);
+    fetch(API_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),signal:ctl.signal})
+      .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json().catch(function(){return {}}); })
+      .then(function(){ form.hidden=true; sent.hidden=false; })
+      .catch(function(){ form.hidden=true; res.hidden=false; })
+      .finally(function(){ clearTimeout(timer); busy=false; btn.textContent=label; btn.disabled=false; });
+  });
+  document.getElementById('edit-lead').addEventListener('click',function(){res.hidden=true;form.hidden=false;});
+  document.getElementById('copy-lead').addEventListener('click',function(e){
+    var b=e.currentTarget, t=b.textContent;
+    var done=function(ok){b.textContent=ok?'Скопировано':'Текст выделен — скопируйте';setTimeout(function(){b.textContent=t},1800)};
+    var fb=function(){var r=document.createRange();r.selectNodeContents(out);var s=getSelection();s.removeAllRanges();s.addRange(r);done(false)};
+    try{navigator.clipboard.writeText(out.textContent).then(function(){done(true)},fb)}catch(x){fb()}
+  });
+  document.querySelectorAll('.copy').forEach(function(b){
+    b.addEventListener('click',function(){
+      var el=document.getElementById(b.getAttribute('data-copy')), t=b.textContent;
+      var done=function(ok){b.textContent=ok?'Скопировано':'Выделено';setTimeout(function(){b.textContent=t},1600)};
+      var fb=function(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);done(false)};
+      try{navigator.clipboard.writeText(el.textContent.trim()).then(function(){done(true)},fb)}catch(x){fb()}
+    });
+  });
+  // калькулятор
+  var fmt=function(n){return Math.round(n).toLocaleString('ru-RU')+' ₽'};
+  function calc(){
+    var v=function(id){var x=parseFloat(document.getElementById(id).value);return isFinite(x)?x:0};
+    var net=v('k-net'), n=v('k-n'), h=v('k-h'), u=Math.min(100,Math.max(1,v('k-u')))/100;
+    var gross=net/0.87, vac=gross*0.093, contr=(gross+vac)*0.31, base=gross+vac+contr, extra=base*0.13, hour=(base+extra)/u;
+    var set=function(id,t){document.getElementById(id).textContent=t};
+    if(net<=0){['k-r1','k-r2','k-r3','k-r4','k-r5','k-hour','k-month'].forEach(function(i){set(i,'—')});return}
+    set('k-r1',fmt(gross)); set('k-r2',fmt(vac)); set('k-r3',fmt(contr)); set('k-r4',fmt(extra));
+    set('k-r5',fmt(hour-base-extra)); set('k-hour',fmt(hour)+'/ч'); set('k-month',fmt(hour*h*n*u));
+  }
+  ['k-net','k-n','k-h','k-u'].forEach(function(id){document.getElementById(id).addEventListener('input',calc)});
+  calc();
+})();
+</script>
+</body>
+</html>
