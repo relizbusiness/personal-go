@@ -1,0 +1,48 @@
+name: Публикация сайта
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Собрать сайт и шрифты
+        run: |
+          mkdir -p _site/fonts
+          cp index.html politika.html soglasie.html favicon.svg robots.txt sitemap.xml CNAME _site/
+          cd /tmp
+          npm pack @fontsource/onest@5.3.1 @fontsource/jetbrains-mono@5.3.0 --silent
+          mkdir onest jbm
+          tar -xzf fontsource-onest-5.3.1.tgz -C onest
+          tar -xzf fontsource-jetbrains-mono-5.3.0.tgz -C jbm
+          for w in 400 500 600 700 800; do for s in latin latin-ext cyrillic; do cp onest/package/files/onest-$s-$w-normal.woff2 $GITHUB_WORKSPACE/_site/fonts/; done; done
+          for w in 500 700; do for s in latin latin-ext cyrillic; do cp jbm/package/files/jetbrains-mono-$s-$w-normal.woff2 $GITHUB_WORKSPACE/_site/fonts/; done; done
+          python3 - <<'PY'
+          R={'latin':'U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD','latin-ext':'U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF','cyrillic':'U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116'}
+          import os
+          out=[]
+          for fam,slug,ws in [('Onest','onest',[400,500,600,700,800]),('JetBrains Mono','jetbrains-mono',[500,700])]:
+            for w in ws:
+              for sub,rng in R.items():
+                out.append("@font-face{font-family:'%s';font-style:normal;font-weight:%d;font-display:swap;src:url(/fonts/%s-%s-%d-normal.woff2) format('woff2');unicode-range:%s}"%(fam,w,slug,sub,w,rng))
+          open(os.environ['GITHUB_WORKSPACE']+'/_site/fonts/fonts.css','w').write('\n'.join(out)+'\n')
+          PY
+          ls -la $GITHUB_WORKSPACE/_site $GITHUB_WORKSPACE/_site/fonts
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
